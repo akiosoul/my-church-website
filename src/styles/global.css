@@ -1,0 +1,115 @@
+/* Global Tailwind Imports */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Enable smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Offset fixed navbar by applying scroll-margin-top to sections */
+#about,
+#services,
+#events,
+#contact {
+  /* Adjust this value to match your nav bar height */
+  scroll-margin-top: 4rem;
+}
+
+/* Custom Variables */
+:root {
+  --color-primary: #1D4ED8;
+  --color-primary-hover: #1E40AF;
+  --color-accent: #2563EB;
+  --color-bg-light: #F9FAFB;
+  --color-text: #374151;
+}
+
+/* Custom Components */
+.btn-primary {
+  @apply px-6 py-3 rounded font-semibold text-white bg-primary hover:bg-primary-hover;
+}
+
+.card {
+  @apply bg-white rounded-lg shadow-lg overflow-hidden;
+}
+
+.card img {
+  @apply w-full h-48 object-cover;
+}
+
+/* Navigation */
+.nav-link {
+  @apply text-gray-800 hover:text-accent;
+}
+
+.nav-mobile-btn {
+  @apply md:hidden focus:outline-none;
+}
+
+/* Hero Section */
+.hero {
+  @apply relative bg-cover bg-center h-screen;
+}
+.hero::before {
+  content: '';
+  @apply absolute inset-0 bg-black bg-opacity-50;
+}
+.hero-content {
+  @apply relative z-10 flex items-center justify-center text-center text-white px-4;
+}
+
+/* Sections Spacing */
+.section {
+  @apply py-16 px-4;
+}
+.section-light {
+  @apply bg-gray-50;
+}
+.section-dark {
+  @apply bg-blue-600 text-white;
+}
+
+/* Service Cards */
+.services-grid {
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8;
+}
+.service-card {
+  @apply bg-white p-6 rounded-lg shadow;
+}
+
+/* Events Grid */
+.events-grid {
+  @apply grid grid-cols-1 md:grid-cols-3 gap-8;
+}
+
+/* Contact Form */
+.form-input {
+  @apply w-full mt-1 p-2 rounded text-gray-800;
+}
+.form-btn {
+  @apply px-6 py-3 bg-white text-blue-600 font-semibold rounded hover:bg-gray-100;
+}
+
+/* Footer */
+.footer {
+  @apply bg-gray-800 text-gray-400 py-8;
+}
+.footer-link {
+  @apply hover:text-white;
+}
+
+/* Social Media Links */
+.social-link {
+  @apply text-gray-400 hover:text-white transition-colors;
+}
+
+.social-links {
+  @apply flex justify-center space-x-6 mt-4;
+}
+
+/* Utility Classes for Social Icons */
+.social-link svg {
+  @apply h-6 w-6;
+}
