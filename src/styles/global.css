@@ -1,7 +1,5 @@
 /* Global Tailwind Imports */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
 /* Enable smooth scrolling */
 html {
@@ -28,7 +26,7 @@ html {
 
 /* Custom Components */
 .btn-primary {
-  @apply px-6 py-3 rounded font-semibold text-white bg-primary hover:bg-primary-hover;
+  @apply px-6 py-3 rounded-sm font-semibold text-white;
 }
 
 .card {
@@ -41,11 +39,11 @@ html {
 
 /* Navigation */
 .nav-link {
-  @apply text-gray-800 hover:text-accent;
+  @apply text-gray-800;
 }
 
 .nav-mobile-btn {
-  @apply md:hidden focus:outline-none;
+  @apply md:hidden focus:outline-hidden;
 }
 
 /* Hero Section */
@@ -54,7 +52,7 @@ html {
 }
 .hero::before {
   content: '';
-  @apply absolute inset-0 bg-black bg-opacity-50;
+  @apply absolute inset-0 bg-black/50;
 }
 .hero-content {
   @apply relative z-10 flex items-center justify-center text-center text-white px-4;
@@ -76,7 +74,7 @@ html {
   @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8;
 }
 .service-card {
-  @apply bg-white p-6 rounded-lg shadow;
+  @apply bg-white p-6 rounded-lg shadow-sm;
 }
 
 /* Events Grid */
@@ -86,10 +84,10 @@ html {
 
 /* Contact Form */
 .form-input {
-  @apply w-full mt-1 p-2 rounded text-gray-800;
+  @apply w-full mt-1 p-2 rounded-sm text-gray-800;
 }
 .form-btn {
-  @apply px-6 py-3 bg-white text-blue-600 font-semibold rounded hover:bg-gray-100;
+  @apply px-6 py-3 bg-white text-blue-600 font-semibold rounded-sm hover:bg-gray-100;
 }
 
 /* Footer */

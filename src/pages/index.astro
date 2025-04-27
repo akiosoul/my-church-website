@@ -21,7 +21,7 @@ import instagramIcon from "@/assets/images/icons/instagram.png"
         <li><a href="#events" class="hover:text-blue-600">Events</a></li>
         <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
       </ul>
-      <button class="md:hidden focus:outline-none">
+      <button class="md:hidden focus:outline-hidden">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
         </svg>
@@ -30,11 +30,11 @@ import instagramIcon from "@/assets/images/icons/instagram.png"
 
     <!-- Hero -->
     <div class="relative bg-cover bg-center h-screen" style=`background-image: url(${heroImg.src});`>
-      <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+      <div class="absolute inset-0 bg-black/50 flex items-center justify-center">
         <div class="text-center text-white px-4">
           <h1 class="text-4xl md:text-6xl font-extrabold mb-4">Welcome to Grace</h1>
           <p class="text-lg md:text-2xl mb-6">A community growing together in faith and love.</p>
-          <a href="#services" class="px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded text-white font-semibold">Learn More</a>
+          <a href="#services" class="px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-sm text-white font-semibold">Learn More</a>
         </div>
       </div>
     </div>
@@ -50,7 +50,7 @@ import instagramIcon from "@/assets/images/icons/instagram.png"
           <p class="text-gray-700 leading-relaxed mb-4">
             At Grace Church, we strive to share the love of Christ through worship, service, and community outreach. Our doors are open to all seeking hope, connection, and spiritual growth.
           </p>
-          <a href="#contact" class="inline-block px-5 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded">Get Involved</a>
+          <a href="#contact" class="inline-block px-5 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-sm">Get Involved</a>
         </div>
       </div>
     </section>
@@ -60,19 +60,19 @@ import instagramIcon from "@/assets/images/icons/instagram.png"
       <div class="container mx-auto text-center">
         <h2 class="text-3xl font-bold mb-12">Service Times</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div class="bg-white p-6 rounded-lg shadow">
+          <div class="bg-white p-6 rounded-lg shadow-sm">
             <h3 class="text-xl font-semibold mb-2">Sunday Morning</h3>
             <p>9:00 AM</p>
           </div>
-          <div class="bg-white p-6 rounded-lg shadow">
+          <div class="bg-white p-6 rounded-lg shadow-sm">
             <h3 class="text-xl font-semibold mb-2">Wednesday Bible Study</h3>
             <p>7:00 PM</p>
           </div>
-          <div class="bg-white p-6 rounded-lg shadow">
+          <div class="bg-white p-6 rounded-lg shadow-sm">
             <h3 class="text-xl font-semibold mb-2">Men's Prayer  Group</h3>
             <p>1:00 PM</p>
           </div>
-          <div class="bg-white p-6 rounded-lg shadow">
+          <div class="bg-white p-6 rounded-lg shadow-sm">
             <h3 class="text-xl font-semibold mb-2">Women's Prayer Group</h3>
             <p>TBD</p>
           </div>
@@ -85,7 +85,7 @@ import instagramIcon from "@/assets/images/icons/instagram.png"
       <h2 class="text-3xl font-bold text-center mb-12">Upcoming Events</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <!-- Example Event Card -->
-        <div class="bg-white rounded-lg shadow overflow-hidden">
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
           <img src={eventImg.src} alt="Event 1" class="w-full h-48 object-cover" />
           <div class="p-6">
             <h3 class="text-xl font-semibold mb-2">Community Outreach</h3>
@@ -95,7 +95,7 @@ import instagramIcon from "@/assets/images/icons/instagram.png"
           </div>
         </div>
 
-        <div class="bg-white rounded-lg shadow overflow-hidden">
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
           <img src={eventImg.src} alt="Event 1" class="w-full h-48 object-cover" />
           <div class="p-6">
             <h3 class="text-xl font-semibold mb-2">Community Outreach</h3>
@@ -105,7 +105,7 @@ import instagramIcon from "@/assets/images/icons/instagram.png"
           </div>
         </div>
 
-        <div class="bg-white rounded-lg shadow overflow-hidden">
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
           <img src={eventImg.src} alt="Event 1" class="w-full h-48 object-cover" />
           <div class="p-6">
             <h3 class="text-xl font-semibold mb-2">Community Outreach</h3>
@@ -127,17 +127,17 @@ import instagramIcon from "@/assets/images/icons/instagram.png"
       <form class="space-y-4 w-full max-w-md">
         <div>
           <label for="name" class="block text-left">Name</label>
-          <input id="name" type="text" class="w-full mt-1 p-2 rounded text-gray-800" placeholder="Your Name" required />
+          <input id="name" type="text" class="w-full mt-1 p-2 rounded-sm text-gray-800" placeholder="Your Name" required />
         </div>
         <div>
           <label for="email" class="block text-left">Email</label>
-          <input id="email" type="email" class="w-full mt-1 p-2 rounded text-gray-800" placeholder="you@example.com" required />
+          <input id="email" type="email" class="w-full mt-1 p-2 rounded-sm text-gray-800" placeholder="you@example.com" required />
         </div>
         <div>
           <label for="message" class="block text-left">Message</label>
-          <textarea id="message" rows="4" class="w-full mt-1 p-2 rounded text-gray-800" placeholder="Your message..." required></textarea>
+          <textarea id="message" rows="4" class="w-full mt-1 p-2 rounded-sm text-gray-800" placeholder="Your message..." required></textarea>
         </div>
-        <button type="submit" class="px-6 py-3 bg-white text-blue-600 font-semibold rounded hover:bg-gray-100">Send Message</button>
+        <button type="submit" class="px-6 py-3 bg-white text-blue-600 font-semibold rounded-sm hover:bg-gray-100">Send Message</button>
       </form>
     </div>
   </section>
